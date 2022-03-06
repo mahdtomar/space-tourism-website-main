@@ -1,0 +1,36 @@
+body{
+    color: white;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left{
+            color: white;
+            width: 50%;
+            p{
+                font-size: 20px;
+                line-height: 2;
+                span{
+                    font-size: 120px;
+                    display: block;
+                }
+            }
+        }
+        .right{
+            button{
+                margin: 100% 10px 10px 10px;
+                cursor: pointer;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                font-size: 40px;
+                transition: all 0.2s ;
+                &:hover{
+                    margin: 100% 0px 0px 0px;
+                    width: 220px;
+                    height: 220px;
+                }
+            }
+        }
+    }
+}

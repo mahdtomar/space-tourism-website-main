@@ -1,0 +1,39 @@
+body {
+  color: white;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .left {
+  color: white;
+  width: 50%;
+}
+
+body .container .left p {
+  line-height: 2;
+}
+
+body .container .left p span {
+  font-size: 120px;
+  display: block;
+}
+
+body .container .right button {
+  margin-top: 100%;
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  font-size: 40px;
+}
+/*# sourceMappingURL=home.css.map */
