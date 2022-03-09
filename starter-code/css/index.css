@@ -62,6 +62,12 @@ body .container nav ul li::before {
   transition: transform 0.150s, -webkit-transform 0.150s;
 }
 
+body .container nav ul li.active::before {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  background-color: white;
+}
+
 body .container nav ul li:hover::before {
   -webkit-transform: scale(1);
           transform: scale(1);
