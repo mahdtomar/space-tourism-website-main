@@ -1,0 +1,57 @@
+body {
+  color: white;
+  position: relative;
+}
+
+body .container {
+  max-width: 1440px;
+  margin: 0px auto;
+  position: relative;
+  top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .left {
+  max-width: 50%;
+}
+
+body .container .left h2 {
+  letter-spacing: 3px;
+}
+
+body .container .left h2 span {
+  color: grey;
+}
+
+body .container .left p {
+  line-height: 200%;
+}
+
+body .container .left p .work {
+  display: block;
+  font-size: 30px;
+  padding: 30px 0px;
+}
+
+body .container .left p .crew-name {
+  display: block;
+  font-size: 50px;
+  padding: 10px 0px 30px;
+}
+
+body .container .right {
+  position: relative;
+}
+
+body .container .right img {
+  width: 300px;
+}
+/*# sourceMappingURL=crew-specialist.css.map */

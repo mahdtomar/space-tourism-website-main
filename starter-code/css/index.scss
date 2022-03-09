@@ -67,4 +67,17 @@ body{
     height: 500px;
     max-width: 1440px;
     }
+    iframe.crew-specialist{
+        #document{
+            html{
+                margin-top: 50px auto;
+            }
+        }
+        margin: -143px auto;
+        height: 595px;
+        position: relative;
+        top: 59%;
+        transform: translateY(-50%);
+        overflow: hidden;
+    }
 }

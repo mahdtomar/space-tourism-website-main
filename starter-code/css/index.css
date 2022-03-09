@@ -86,4 +86,18 @@ body iframe {
   height: 500px;
   max-width: 1440px;
 }
+
+body iframe.crew-specialist {
+  margin: -143px auto;
+  height: 595px;
+  position: relative;
+  top: 59%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  overflow: hidden;
+}
+
+body iframe.crew-specialist #document html {
+  margin-top: 50px auto;
+}
 /*# sourceMappingURL=index.css.map */
