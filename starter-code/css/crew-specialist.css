@@ -26,7 +26,7 @@ body .container .combined {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 0px;
 }
 
 body .container .combined .right {
@@ -35,13 +35,14 @@ body .container .combined .right {
 }
 
 body .container .combined .right img {
-  position: relative;
-  right: 0px;
+  position: absolute;
+  top: 0px;
+  left: 100%;
   width: 140%;
 }
 
 body .container .combined .left {
-  padding-top: 40px;
+  padding-top: 80px;
   line-height: 150%;
 }
 
@@ -55,10 +56,32 @@ body .container .combined .left .grey-text {
 body .container .combined .left .crew-name {
   display: block;
   font-size: 50px;
-  padding: 30px 0px 40px;
+  padding: 10px 0px 40px;
 }
 
 body .container .combined .left p {
   line-height: 200%;
+}
+
+body .container .combined .left .swicher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100px;
+}
+
+body .container .combined .left .swicher span {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: grey;
+  color: grey;
+  cursor: pointer;
+}
+
+body .container .combined .left .swicher span[active="true"] {
+  background-color: white;
 }
 /*# sourceMappingURL=crew-specialist.css.map */
