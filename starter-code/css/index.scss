@@ -4,6 +4,7 @@ body{
     background-size: cover;
     color: white;
     height: 100vh;
+    font-family: 'Nanum Myeongjo', serif;
     overflow: hidden;
     .container{
         nav{
@@ -68,6 +69,7 @@ body{
     max-width: 1440px;
     }
     iframe.crew-specialist{
+        
         #document{
             html{
                 margin-top: 50px auto;

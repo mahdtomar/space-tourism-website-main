@@ -1,57 +1,64 @@
 body {
   color: white;
+  font-family: 'Nanum Myeongjo', serif;
   position: relative;
+  overflow: hidden;
 }
 
 body .container {
+  width: 80%;
   max-width: 1440px;
+  display: block;
   margin: 0px auto;
-  position: relative;
-  top: 120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-body .container .left {
-  max-width: 50%;
-}
-
-body .container .left h2 {
+body .container h2 {
   letter-spacing: 3px;
 }
 
-body .container .left h2 span {
+body .container h2 span {
   color: grey;
+  opacity: 0.7;
 }
 
-body .container .left p {
-  line-height: 200%;
+body .container .combined {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 50px;
 }
 
-body .container .left p .work {
-  display: block;
-  font-size: 30px;
-  padding: 30px 0px;
-}
-
-body .container .left p .crew-name {
-  display: block;
-  font-size: 50px;
-  padding: 10px 0px 30px;
-}
-
-body .container .right {
+body .container .combined .right {
+  width: 50%;
   position: relative;
 }
 
-body .container .right img {
-  width: 300px;
+body .container .combined .right img {
+  position: relative;
+  right: 0px;
+  width: 140%;
+}
+
+body .container .combined .left {
+  padding-top: 40px;
+  line-height: 150%;
+}
+
+body .container .combined .left .grey-text {
+  color: grey;
+  display: block;
+  font-size: 30px;
+  padding: 40px 0px;
+}
+
+body .container .combined .left .crew-name {
+  display: block;
+  font-size: 50px;
+  padding: 30px 0px 40px;
+}
+
+body .container .combined .left p {
+  line-height: 200%;
 }
 /*# sourceMappingURL=crew-specialist.css.map */
