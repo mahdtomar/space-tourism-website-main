@@ -88,7 +88,7 @@ body iframe {
   max-width: 1440px;
 }
 
-body iframe.crew-specialist {
+body iframe.crew-specialist, body iframe.crew-pilot, body iframe.crew-engineer, body iframe.crew-commander {
   margin: -143px auto;
   height: 595px;
   position: relative;
@@ -98,7 +98,7 @@ body iframe.crew-specialist {
   overflow: hidden;
 }
 
-body iframe.crew-specialist #document html {
+body iframe.crew-specialist #document html, body iframe.crew-pilot #document html, body iframe.crew-engineer #document html, body iframe.crew-commander #document html {
   margin-top: 50px auto;
 }
 
