@@ -1,0 +1,48 @@
+body {
+  color: white;
+  font-family: 'Nanum Myeongjo', serif;
+  position: relative;
+}
+
+body .container {
+  width: 80%;
+  max-width: 1440px;
+  display: block;
+  margin: 0px auto;
+}
+
+body .container .content > span {
+  font-size: 60px;
+  letter-spacing: 5px;
+}
+
+body .container .content p {
+  margin: 40px 0px 50px;
+  line-height: 150%;
+}
+
+body .container .content .grid-two {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  border-top: 1px solid grey;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+body .container .content .grid-two div span {
+  text-align: left;
+  display: block;
+}
+
+body .container .content .grid-two div span.time {
+  font-size: 30px;
+  padding-top: 5px;
+}
+
+body .container .content .grid-two div span.distance {
+  text-align: center;
+}
+/*# sourceMappingURL=europa.css.map */

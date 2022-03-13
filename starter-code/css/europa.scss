@@ -1,0 +1,45 @@
+
+body{
+    color: white;
+    font-family: 'Nanum Myeongjo', serif;
+    position: relative;
+    .container{
+        width: 80%;
+        max-width: 1440px;
+        display: block;
+        margin: 0px auto;
+    
+        .content{
+            >span{
+                font-size: 60px;
+                letter-spacing: 5px;
+            }
+            p{
+                margin: 40px 0px 50px;
+                line-height: 150%;
+            }
+            .grid-two{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+                border-top: 1px solid grey;
+                padding-top:20px ;
+                margin-top:20px ;
+                div{
+                    span{
+                    text-align: left;
+                    display: block;
+                    &.time{
+                        font-size: 30px;
+                        padding-top: 5px;
+                    }
+                    &.distance{
+                        text-align: center;
+                    }
+                    }
+                    
+            }
+            }
+        }
+    }
+}

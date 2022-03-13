@@ -11,7 +11,7 @@ body{
             backdrop-filter: blur(8px);
             position: relative;
             display: block;
-            margin: 30px auto;
+            margin: 10px auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -81,6 +81,10 @@ body{
         top: 59%;
         transform: translateY(-50%);
         overflow: hidden;
+    }
+    iframe.destination{
+        height: 600px;
+        margin-top: 20px;
     }
 }
 body.crew-specialist{
