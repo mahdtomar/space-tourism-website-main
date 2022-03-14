@@ -1,0 +1,22 @@
+body {
+    color: white;
+    font-family: "Nanum Myeongjo", serif;
+    position: relative;
+    overflow: hidden;
+    .container {
+        width: 80%;
+        max-width: 1440px;
+        display: block;
+        margin: 0px auto;
+        height: 100%;
+        .grid2{
+            display: grid;
+            grid-template-columns: 60% 40%;
+            height: 700px;
+            .img{
+                background-image: url(/starter-code/assets/technology/image-space-capsule-portrait.jpg);
+                background-size: cover;
+            }
+        }
+    }
+}

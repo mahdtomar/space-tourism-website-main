@@ -1,0 +1,46 @@
+body {
+    color: white;
+    font-family: "Nanum Myeongjo", serif;
+    position: relative;
+    overflow: hidden;
+    .container {
+        width: 80%;
+        max-width: 1440px;
+        display: block;
+        margin: 0px auto;
+        h2 {
+            letter-spacing: 3px;
+            span {
+                color: grey;
+                opacity: 0.7;
+            }
+        }
+        .grid2 {
+            display: grid;
+            grid-template-columns: 10% 90%;
+            .dots {
+                margin-top: 50%;
+                span {
+                    display: block;
+                    border: 1px solid white;
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    border-radius: 50%;
+                    margin: 30px 0px;
+                    transition: background-color 0.2s linear;
+                    &.active, &:hover{
+                            background-color: white;
+                            color: black;
+                    }
+                }
+            }
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+        }
+    }
+}

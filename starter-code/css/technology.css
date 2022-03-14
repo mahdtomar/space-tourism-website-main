@@ -1,0 +1,63 @@
+body {
+  color: white;
+  font-family: "Nanum Myeongjo", serif;
+  position: relative;
+  overflow: hidden;
+}
+
+body .container {
+  width: 80%;
+  max-width: 1440px;
+  display: block;
+  margin: 0px auto;
+}
+
+body .container h2 {
+  letter-spacing: 3px;
+}
+
+body .container h2 span {
+  color: grey;
+  opacity: 0.7;
+}
+
+body .container .grid2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 90%;
+      grid-template-columns: 10% 90%;
+}
+
+body .container .grid2 .dots {
+  margin-top: 50%;
+}
+
+body .container .grid2 .dots span {
+  display: block;
+  border: 1px solid white;
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  margin: 30px 0px;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
+body .container .grid2 .dots span.active, body .container .grid2 .dots span:hover {
+  background-color: white;
+  color: black;
+}
+
+body .container iframe {
+  width: 100%;
+  height: 400px;
+}
+/*# sourceMappingURL=technology.css.map */
