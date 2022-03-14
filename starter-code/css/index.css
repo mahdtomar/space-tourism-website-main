@@ -24,7 +24,7 @@ body .container nav {
       -ms-flex-align: center;
           align-items: center;
   max-width: 1440px;
-  width: 80%;
+  width: 95%;
   padding: 20px 0px;
 }
 
@@ -109,5 +109,9 @@ body iframe.destination {
 
 body.crew-specialist {
   background-image: url(../assets/crew/background-crew-desktop.jpg);
+}
+
+body.technology {
+  background-image: url(../assets/technology/background-technology-desktop.jpg);
 }
 /*# sourceMappingURL=index.css.map */

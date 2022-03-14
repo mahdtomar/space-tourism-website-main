@@ -6,7 +6,7 @@ body {
 }
 
 body .container {
-  width: 80%;
+  width: 100%;
   max-width: 1440px;
   display: block;
   margin: 0px auto;
@@ -49,15 +49,16 @@ body .container .grid2 .dots span {
   margin: 30px 0px;
   -webkit-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
+  cursor: pointer;
 }
 
-body .container .grid2 .dots span.active, body .container .grid2 .dots span:hover {
+body .container .grid2 .dots span[active="true"], body .container .grid2 .dots span:hover {
   background-color: white;
   color: black;
 }
 
 body .container iframe {
   width: 100%;
-  height: 400px;
+  min-height: 700px;
 }
 /*# sourceMappingURL=technology.css.map */

@@ -4,35 +4,35 @@ body {
     position: relative;
     overflow: hidden;
     .container {
-        width:100%;
+        width: 100%;
         max-width: 1440px;
         display: block;
         margin: 0px auto;
         height: 100%;
 
-        .grid2{
+        .grid2 {
             margin-top: 60px;
             display: grid;
             grid-template-columns: 50% 50%;
             gap: 20px;
             height: 700px;
-            .text{
-                span{
+            .text {
+                span {
                     display: block;
                     font-size: 30px;
-                    &:nth-child(2){
+                    &:nth-child(2) {
                         font-size: 60px;
                         padding: 10px 0px 30px;
                     }
                 }
-                p{
+                p {
                     line-height: 200%;
                 }
             }
-            .img{
+            .img {
                 min-height: 450px;
-                img{
-                    width:100%;
+                img {
+                    width: 100%;
                 }
             }
         }
