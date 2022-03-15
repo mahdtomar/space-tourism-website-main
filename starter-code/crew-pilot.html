@@ -23,7 +23,12 @@
         <span class="grey-text">Pilot</span>
         <span class="crew-name">Victor Glover</span>
         <p>Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer.</p>
-        <div class="swicher"><span></span><span  active="true" ></span><span></span><span></span></div>
+        <div id="spans" class="swicher">
+          <span onclick="crewNavigation(0)" ></span>
+          <span  active="true" onclick="crewNavigation(1)"></span>
+          <span onclick="crewNavigation(2)" ></span>
+          <span onclick="crewNavigation(3)" ></span>
+        </div>
       </div>
 
       <div class="right">
@@ -34,8 +39,7 @@
 
   
   
+<script src="/starter-code/javaScript/crew.js"></script>
 
-
-<script src="main.js"></script>
 </body>
 </html>
