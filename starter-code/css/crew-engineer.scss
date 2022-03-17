@@ -5,7 +5,7 @@ body{
     position: relative;
     overflow: hidden;
     .container{
-        width: 80%;
+        width: 100%;
         max-width: 1440px;
         display: block;
         margin: 0px auto;
@@ -26,8 +26,9 @@ body{
                 img{
                     position: absolute;
                     top: 0px;
-                    left: 100%;
-                    width: 140%;
+                    left: 60%;
+                    width: 130%;
+                
                 }
             }
             .left{
@@ -51,6 +52,9 @@ body{
                     display: flex;
                     justify-content: space-around;
                     width: 100px;
+                    position: fixed;
+                    top: 90%;
+                    left: 10%;
                     span{
                         width: 15px;
                         height: 15px;

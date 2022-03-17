@@ -10,8 +10,34 @@ function mainNavigation(num) {
         mainNavArray[i].classList.remove("active")
     }
     mainNavArray[num].classList.add("active")
-    num == 2 ? setTimeout(crewDeclaring, 200) : ""
-    num == 1 ? setTimeout(dstDeclaring, 200) : ""
+    let bodyclasslist = document.body.classList;
+    switch (num) {
+        case 0 :
+            clearClasses(bodyclasslist)
+            break;
+        case 1:
+            setTimeout(dstDeclaring, 200)
+            clearClasses(bodyclasslist)
+            document.body.classList.add("destination")
+            document.body.classList.add("destination")
+            break;
+        case 2:
+            clearClasses(bodyclasslist)
+            document.body.classList.add("crew")
+            setTimeout(crewDeclaring, 200)
+            break;
+        case 3:
+            clearClasses(bodyclasslist)
+            document.body.classList.add("technology")
+            setTimeout(techNavigation, 200)
+            break;
+    }
+
+}
+function clearClasses(list){
+    for(i=0;i<list.length;i++){
+        list.remove(`${list[i]}`)
+    }
 }
 
 function crewDeclaring() {
@@ -67,6 +93,37 @@ function dstDeclaring() {
                 break;
             default:
                 break;
+        }
+    }
+}
+function techNavigation() {
+    globalThis.iframeDocument = iframe.contentDocument;
+    globalThis.techIframe = iframeDocument.getElementById("techIframe");
+    let dots = iframeDocument.querySelector(".dots")
+    let dotsArr = dots.children
+    dots.onclick = (e) => {
+        let currentSpan = e.target
+        for (i = 0; i < dotsArr.length; i++) {
+            dotsArr[i].removeAttribute("active")
+        }
+        if (currentSpan.classList.contains("dots")) {
+        } else {
+            switch (currentSpan.textContent) {
+                case "1":
+                    techIframe.setAttribute("src", "/starter-code/technology-spaceport.html")
+                    dotsArr[0].setAttribute("active", "true")
+                    break;
+                case "2":
+                    dotsArr[1].setAttribute("active", "true")
+                    techIframe.setAttribute("src", "/starter-code/technology-capsule.html")
+                    break;
+                case "3":
+                    techIframe.setAttribute("src", "/starter-code/technology-vehicle.html")
+                    dotsArr[2].setAttribute("active", "true")
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

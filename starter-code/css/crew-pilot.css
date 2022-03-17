@@ -6,7 +6,7 @@ body {
 }
 
 body .container {
-  width: 80%;
+  width: 100%;
   max-width: 1440px;
   display: block;
   margin: 0px auto;
@@ -37,8 +37,8 @@ body .container .combined .right {
 body .container .combined .right img {
   position: absolute;
   top: 0px;
-  left: 100%;
-  width: 140%;
+  left: 60%;
+  width: 130%;
 }
 
 body .container .combined .left {
@@ -70,6 +70,9 @@ body .container .combined .left .swicher {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100px;
+  position: fixed;
+  top: 90%;
+  left: 10%;
 }
 
 body .container .combined .left .swicher span {
