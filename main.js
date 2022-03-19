@@ -4,8 +4,19 @@ let mainNavArray = mailUl.children
 let mainPages = ["starter-code/landing.html", "starter-code/destination.html", "starter-code/crew-specialist.html", "starter-code/technology.html"]
 let crewPages = ["starter-code/crew-commander.html", "starter-code/crew-specialist.html", "starter-code/crew-pilot.html", "starter-code/crew-engineer.html"]
 
+function starter(){
+    globalThis.iframeDocument = iframe.contentDocument
+    globalThis.explorebtn = iframeDocument.getElementById("explorebtn") 
+    explorebtn.addEventListener("click",()=>{
+        mainNavigation(1)
+    })
+}
+
+setTimeout(starter,200)
+
 function mainNavigation(num) {
     iframe.setAttribute("src", mainPages[num])
+    num==0?setTimeout(starter,200):""
     for (i = 0; i < mainNavArray.length; i++) {
         mainNavArray[i].classList.remove("active")
     }
@@ -18,7 +29,6 @@ function mainNavigation(num) {
         case 1:
             setTimeout(dstDeclaring, 200)
             clearClasses(bodyclasslist)
-            document.body.classList.add("destination")
             document.body.classList.add("destination")
             break;
         case 2:
@@ -34,6 +44,7 @@ function mainNavigation(num) {
     }
 
 }
+
 function clearClasses(list){
     for(i=0;i<list.length;i++){
         list.remove(`${list[i]}`)
@@ -96,6 +107,7 @@ function dstDeclaring() {
         }
     }
 }
+
 function techNavigation() {
     globalThis.iframeDocument = iframe.contentDocument;
     globalThis.techIframe = iframeDocument.getElementById("techIframe");
@@ -104,7 +116,7 @@ function techNavigation() {
     dots.onclick = (e) => {
         let currentSpan = e.target
         for (i = 0; i < dotsArr.length; i++) {
-            dotsArr[i].removeAttribute("active")
+            currentSpan.classList.contains("dots")?"":dotsArr[i].removeAttribute("active")
         }
         if (currentSpan.classList.contains("dots")) {
         } else {

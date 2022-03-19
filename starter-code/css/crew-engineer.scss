@@ -21,13 +21,10 @@ body{
             grid-template-columns: 1fr 1fr ;
             gap: 0px;
             .right{
-                width: 50%;
+                width: 100%;
                 position: relative;
                 img{
-                    position: absolute;
-                    top: 0px;
-                    left: 60%;
-                    width: 130%;
+                    margin-top: 20px;
                 
                 }
             }
@@ -54,7 +51,6 @@ body{
                     width: 100px;
                     position: fixed;
                     top: 90%;
-                    left: 10%;
                     span{
                         width: 15px;
                         height: 15px;
@@ -65,6 +61,19 @@ body{
                         &[active = "true"]{
                             background-color: white;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:1150px) {
+    body{
+        .container{
+            .combined{
+                .right{
+                    img{
+                        width: 100%;
                     }
                 }
             }

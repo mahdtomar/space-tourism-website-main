@@ -30,15 +30,12 @@ body .container .combined {
 }
 
 body .container .combined .right {
-  width: 50%;
+  width: 100%;
   position: relative;
 }
 
 body .container .combined .right img {
-  position: absolute;
-  top: 0px;
-  left: 60%;
-  width: 130%;
+  margin-top: 20px;
 }
 
 body .container .combined .left {
@@ -72,7 +69,6 @@ body .container .combined .left .swicher {
   width: 100px;
   position: fixed;
   top: 90%;
-  left: 10%;
 }
 
 body .container .combined .left .swicher span {
@@ -86,5 +82,33 @@ body .container .combined .left .swicher span {
 
 body .container .combined .left .swicher span[active="true"] {
   background-color: white;
+}
+
+@media (max-width: 1150px) {
+  body .container .combined .right img {
+    width: 100%;
+  }
+  body .container .combined .left .grey-text {
+    padding: 10px 0px;
+  }
+  body .container .combined .left .crew-name {
+    padding: 10px 0px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  body .container {
+    width: 100%;
+  }
+  body .container .combined {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -webkit-column-gap: 50px;
+            column-gap: 50px;
+  }
+  body .container .combined .left {
+    padding-top: 10px;
+  }
 }
 /*# sourceMappingURL=crew-commander.css.map */

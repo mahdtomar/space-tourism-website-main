@@ -21,14 +21,10 @@ body{
             grid-template-columns: 1fr 1fr ;
             gap: 0px;
             .right{
-                width: 50%;
+                width: 100%;
                 position: relative;
                 img{
-                    position: absolute;
-                    top: 0px;
-                    left: 60%;
-                    width: 130%;
-                
+                    margin-top: 20px;
                 }
             }
             .left{
@@ -54,7 +50,6 @@ body{
                     width: 100px;
                     position: fixed;
                     top: 90%;
-                    left: 10%;
                     span{
                         width: 15px;
                         height: 15px;
@@ -66,6 +61,42 @@ body{
                             background-color: white;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+@media (max-width:1150px) {
+    body{
+        .container{
+            .combined{
+                .right{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .left{
+                    .grey-text{
+                        padding: 10px 0px;
+                    }
+                    .crew-name{
+                        padding: 10px 0px;
+                        line-height: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:768px) {
+    body{
+        .container{
+            width: 100%;
+            .combined{
+                grid-template-columns: 1fr;
+                column-gap: 50px;
+                .left{
+                    padding-top: 10px;
                 }
             }
         }

@@ -118,4 +118,14 @@ body.technology {
 body.destination {
   background-image: url(/starter-code/assets/destination/background-destination-desktop.jpg);
 }
+
+@media (max-width: 768px) {
+  body {
+    background-image: url(/starter-code/assets/crew/background-crew-tablet.jpg);
+    overflow: scroll;
+  }
+  body iframe {
+    height: 10000px;
+  }
+}
 /*# sourceMappingURL=index.css.map */
