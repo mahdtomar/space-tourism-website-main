@@ -139,3 +139,4 @@ function techNavigation() {
         }
     }
 }
+console.log("this is working")
