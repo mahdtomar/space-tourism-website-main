@@ -87,20 +87,20 @@ function dstDeclaring() {
         currentLi.classList.contains("a") ? currentLi.parentElement.classList.add("active") : currentLi.classList.add("active")
         switch (currentLi.textContent) {
             case "Mars":
-                dstIframe.setAttribute("src", "/starter-code/destination-mars.html")
-                dstimg.setAttribute("src", "/starter-code/assets/destination/image-mars.png")
+                dstIframe.setAttribute("src", "starter-code/destination-mars.html")
+                dstimg.setAttribute("src", "starter-code/assets/destination/image-mars.png")
                 break;
             case "Titan":
-                dstIframe.setAttribute("src", "/starter-code/destination-titan.html")
-                dstimg.setAttribute("src", "/starter-code/assets/destination/image-titan.png")
+                dstIframe.setAttribute("src", "starter-code/destination-titan.html")
+                dstimg.setAttribute("src", "starter-code/assets/destination/image-titan.png")
                 break;
             case "Moon":
-                dstIframe.setAttribute("src", "/starter-code/destination-moon.html")
-                dstimg.setAttribute("src", "/starter-code/assets/destination/image-moon.png")
+                dstIframe.setAttribute("src", "starter-code/destination-moon.html")
+                dstimg.setAttribute("src", "starter-code/assets/destination/image-moon.png")
                 break;
             case "Europa":
-                dstIframe.setAttribute("src", "/starter-code/destination-europa.html")
-                dstimg.setAttribute("src", "/starter-code/assets/destination/image-europa.png")
+                dstIframe.setAttribute("src", "starter-code/destination-europa.html")
+                dstimg.setAttribute("src", "starter-code/assets/destination/image-europa.png")
                 break;
             default:
                 break;
@@ -122,15 +122,15 @@ function techNavigation() {
         } else {
             switch (currentSpan.textContent) {
                 case "1":
-                    techIframe.setAttribute("src", "/starter-code/technology-spaceport.html")
+                    techIframe.setAttribute("src", "starter-code/technology-spaceport.html")
                     dotsArr[0].setAttribute("active", "true")
                     break;
                 case "2":
                     dotsArr[1].setAttribute("active", "true")
-                    techIframe.setAttribute("src", "/starter-code/technology-capsule.html")
+                    techIframe.setAttribute("src", "starter-code/technology-capsule.html")
                     break;
                 case "3":
-                    techIframe.setAttribute("src", "/starter-code/technology-vehicle.html")
+                    techIframe.setAttribute("src", "starter-code/technology-vehicle.html")
                     dotsArr[2].setAttribute("active", "true")
                     break;
                 default:
