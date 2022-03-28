@@ -4,7 +4,7 @@ body {
   background-size: cover;
   color: white;
   height: 100vh;
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: "Nanum Myeongjo", serif;
   overflow: hidden;
 }
 
@@ -57,10 +57,10 @@ body .container nav ul li::before {
   height: 3px;
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
-  -webkit-transition: -webkit-transform 0.150s;
-  transition: -webkit-transform 0.150s;
-  transition: transform 0.150s;
-  transition: transform 0.150s, -webkit-transform 0.150s;
+  -webkit-transition: -webkit-transform 0.15s;
+  transition: -webkit-transform 0.15s;
+  transition: transform 0.15s;
+  transition: transform 0.15s, -webkit-transform 0.15s;
 }
 
 body .container nav ul li.active::before {
@@ -88,7 +88,10 @@ body iframe {
   max-width: 1440px;
 }
 
-body iframe.crew-specialist, body iframe.crew-pilot, body iframe.crew-engineer, body iframe.crew-commander {
+body iframe.crew-specialist,
+body iframe.crew-pilot,
+body iframe.crew-engineer,
+body iframe.crew-commander {
   margin: -143px auto;
   height: 595px;
   position: relative;
@@ -98,7 +101,10 @@ body iframe.crew-specialist, body iframe.crew-pilot, body iframe.crew-engineer, 
   overflow: hidden;
 }
 
-body iframe.crew-specialist #document html, body iframe.crew-pilot #document html, body iframe.crew-engineer #document html, body iframe.crew-commander #document html {
+body iframe.crew-specialist #document html,
+body iframe.crew-pilot #document html,
+body iframe.crew-engineer #document html,
+body iframe.crew-commander #document html {
   margin-top: 50px auto;
 }
 

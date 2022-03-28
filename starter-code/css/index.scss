@@ -1,13 +1,13 @@
-body{
+body {
     background-image: url(../assets/home/background-home-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
     height: 100vh;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: "Nanum Myeongjo", serif;
     overflow: hidden;
-    .container{
-        nav{
+    .container {
+        nav {
             backdrop-filter: blur(8px);
             position: relative;
             display: block;
@@ -18,60 +18,59 @@ body{
             max-width: 1440px;
             width: 95%;
             padding: 20px 0px;
-            ul{
+            ul {
                 position: absolute;
                 right: 0px;
                 list-style-type: none;
                 width: fit-content;
                 padding: 5px 0px;
-                padding-right:  20px;
-                li{
+                padding-right: 20px;
+                li {
                     display: inline;
                     padding: 34px 10px;
                     width: 40px;
                     height: 10px;
                     cursor: pointer;
                     position: relative;
-                    &::before{
+                    &::before {
                         content: "";
                         position: absolute;
                         bottom: 0px;
                         left: 0px;
                         width: 100%;
                         height: 3px;
-                        transform: scale(.5);
-                        transition: transform 0.150s ;
+                        transform: scale(0.5);
+                        transition: transform 0.15s;
                     }
-                    &.active::before{
+                    &.active::before {
                         transform: scale(0.5);
                         background-color: white;
                     }
-                    &:hover::before{
+                    &:hover::before {
                         transform: scale(1);
                         background-color: white;
                     }
-                    a{
+                    a {
                         color: white;
                         text-decoration: none;
-
                     }
                 }
-
             }
         }
-    
     }
-    iframe{
-    display: block;
-    width: 80%;
-    margin: 50px auto;
-    height: 500px;
-    max-width: 1440px;
+    iframe {
+        display: block;
+        width: 80%;
+        margin: 50px auto;
+        height: 500px;
+        max-width: 1440px;
     }
-    iframe.crew-specialist, iframe.crew-pilot, iframe.crew-engineer, iframe.crew-commander{
-        
-        #document{
-            html{
+    iframe.crew-specialist,
+    iframe.crew-pilot,
+    iframe.crew-engineer,
+    iframe.crew-commander {
+        #document {
+            html {
                 margin-top: 50px auto;
             }
         }
@@ -82,28 +81,26 @@ body{
         transform: translateY(-50%);
         overflow: hidden;
     }
-    iframe.destination{
+    iframe.destination {
         height: 600px;
         margin-top: 20px;
     }
 }
-body.crew{
+body.crew {
     background-image: url(../assets/crew/background-crew-desktop.jpg);
 }
-body.technology{
+body.technology {
     background-image: url(../assets/technology/background-technology-desktop.jpg);
 }
-body.destination{
+body.destination {
     background-image: url(/starter-code/assets/destination/background-destination-desktop.jpg);
 }
 
-
-
-@media (max-width:768px) {
-    body{
+@media (max-width: 768px) {
+    body {
         background-image: url(/starter-code/assets/crew/background-crew-tablet.jpg);
         overflow: scroll;
-        iframe{
+        iframe {
             height: 10000px;
         }
     }
