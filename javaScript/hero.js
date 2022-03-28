@@ -15,6 +15,7 @@ function starter(){
 setTimeout(starter,200)
 
 function mainNavigation(num) {
+
     iframe.setAttribute("src", mainPages[num])
     num==0?setTimeout(starter,200):""
     for (i = 0; i < mainNavArray.length; i++) {
@@ -42,6 +43,7 @@ function mainNavigation(num) {
             setTimeout(techNavigation, 200)
             break;
     }
+console.log(iframe.getAttribute("src"))
 
 }
 
