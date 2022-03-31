@@ -93,12 +93,12 @@ body.technology {
     background-image: url(../assets/technology/background-technology-desktop.jpg);
 }
 body.destination {
-    background-image: url(/starter-code/assets/destination/background-destination-desktop.jpg);
+    background-image: url(../starter-code/assets/destination/background-destination-desktop.jpg);
 }
 
 @media (max-width: 768px) {
     body {
-        background-image: url(/starter-code/assets/crew/background-crew-tablet.jpg);
+        background-image: url(../starter-code/assets/crew/background-crew-tablet.jpg);
         overflow: scroll;
         iframe {
             height: 10000px;
