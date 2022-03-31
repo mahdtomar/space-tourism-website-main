@@ -1,8 +1,8 @@
 let mailUl = document.querySelector(".mainul");
 let iframe = document.getElementById("iframe")
 let mainNavArray = mailUl.children
-let mainPages = ["./starter-code/landing.html", "./starter-code/destination.html", "./starter-code/crew-specialist.html", "./starter-code/technology.html"]
-let crewPages = ["./starter-code/crew-commander.html", "./starter-code/crew-specialist.html", "./starter-code/crew-pilot.html", "./starter-code/crew-engineer.html"]
+let mainPages = ["landing.html", "/destination.html", "crew-specialist.html", "technology.html"]
+let crewPages = ["crew-commander.html", "crew-specialist.html", "crew-pilot.html", "crew-engineer.html"]
 
 function starter(){
     globalThis.iframeDocument = iframe.contentDocument
@@ -89,19 +89,19 @@ function dstDeclaring() {
         currentLi.classList.contains("a") ? currentLi.parentElement.classList.add("active") : currentLi.classList.add("active")
         switch (currentLi.textContent) {
             case "Mars":
-                dstIframe.setAttribute("src", "/starter-code/destination-mars.html")
+                dstIframe.setAttribute("src", "destination-mars.html")
                 dstimg.setAttribute("src", "/starter-code/assets/destination/image-mars.png")
                 break;
             case "Titan":
-                dstIframe.setAttribute("src", "/starter-code/destination-titan.html")
+                dstIframe.setAttribute("src", "destination-titan.html")
                 dstimg.setAttribute("src", "/starter-code/assets/destination/image-titan.png")
                 break;
             case "Moon":
-                dstIframe.setAttribute("src", "/starter-code/destination-moon.html")
+                dstIframe.setAttribute("src", "destination-moon.html")
                 dstimg.setAttribute("src", "/starter-code/assets/destination/image-moon.png")
                 break;
             case "Europa":
-                dstIframe.setAttribute("src", "/starter-code/destination-europa.html")
+                dstIframe.setAttribute("src", "destination-europa.html")
                 dstimg.setAttribute("src", "/starter-code/assets/destination/image-europa.png")
                 break;
             default:
