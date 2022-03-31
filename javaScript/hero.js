@@ -1,8 +1,8 @@
 let mailUl = document.querySelector(".mainul");
 let iframe = document.getElementById("iframe")
 let mainNavArray = mailUl.children
-let mainPages = ["starter-code/landing.html", "starter-code/destination.html", "starter-code/crew-specialist.html", "starter-code/technology.html"]
-let crewPages = ["starter-code/crew-commander.html", "starter-code/crew-specialist.html", "starter-code/crew-pilot.html", "starter-code/crew-engineer.html"]
+let mainPages = ["./starter-code/landing.html", "./starter-code/destination.html", "./starter-code/crew-specialist.html", "./starter-code/technology.html"]
+let crewPages = ["./starter-code/crew-commander.html", "./starter-code/crew-specialist.html", "./starter-code/crew-pilot.html", "./starter-code/crew-engineer.html"]
 
 function starter(){
     globalThis.iframeDocument = iframe.contentDocument
